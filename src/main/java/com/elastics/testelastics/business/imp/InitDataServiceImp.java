@@ -17,6 +17,7 @@ public class InitDataServiceImp implements InitDataService {
 
     private final UserRepository userRepository;
     private final ItemRepository itemRepository;
+    private final Random random;
 
     @Override
     public void initUsers() {
@@ -32,7 +33,7 @@ public class InitDataServiceImp implements InitDataService {
         userRepository.findAll().forEach(u -> Stream.of("s21", "dell latitude").forEach(item -> {
             Item i = new Item();
             i.setTitle(item);
-            i.setQuantity((new Random().nextInt() * 100));
+            i.setQuantity(random.nextInt() * 100);
             i.setUser(u);
             itemRepository.save(i);
         }));

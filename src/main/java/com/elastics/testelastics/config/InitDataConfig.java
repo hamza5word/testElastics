@@ -16,7 +16,7 @@ public class InitDataConfig implements CommandLineRunner {
     private final InitDataService service;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         service.initUsers();
         service.initItems();
         LOG.error("DEV_LOGS: Data Initialized Successfully");
