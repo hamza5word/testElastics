@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 public class InitDataConfig implements CommandLineRunner {
 
-    private final static Logger LOG = LoggerFactory.getLogger(InitDataConfig.class);
+    private static final Logger LOG = LoggerFactory.getLogger(InitDataConfig.class);
 
     private final InitDataService service;
 

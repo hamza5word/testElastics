@@ -8,6 +8,7 @@ import com.elastics.testelastics.entities.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Random;
 import java.util.stream.Stream;
 
 @Service
@@ -31,7 +32,7 @@ public class InitDataServiceImp implements InitDataService {
         userRepository.findAll().forEach(u -> Stream.of("s21", "dell latitude").forEach(item -> {
             Item i = new Item();
             i.setTitle(item);
-            i.setQuantity((int) (Math.random() * 100));
+            i.setQuantity((new Random().nextInt() * 100));
             i.setUser(u);
             itemRepository.save(i);
         }));

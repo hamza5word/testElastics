@@ -13,7 +13,7 @@ class TestElasticsApplicationTests {
     private InitDataService service;
 
     @Test
-    public void testInitData() {
+    void testInitData() {
         // TEST DATA
         Assertions.assertDoesNotThrow(() -> service.initUsers());
         Assertions.assertDoesNotThrow(() -> service.initItems());
