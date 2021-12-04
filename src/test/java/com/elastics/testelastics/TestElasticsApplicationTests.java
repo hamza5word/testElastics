@@ -15,7 +15,7 @@ class TestElasticsApplicationTests {
     @Test
     public void testInitData() {
         // TEST DATA
-        Assertions.assertThrows(Exception.class, () -> service.initUsers());
+        Assertions.assertDoesNotThrow(() -> service.initUsers());
         Assertions.assertDoesNotThrow(() -> service.initItems());
     }
 
