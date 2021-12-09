@@ -34,3 +34,21 @@
 2021-12-09 15:23:19.485  INFO 21712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-12-09 15:23:19.488  INFO 21712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-12-09 15:23:19.498  INFO 21712 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-09 15:33:29.061  INFO 16592 --- [main] c.e.t.TestElasticsApplicationTests       : Starting TestElasticsApplicationTests using Java 11.0.11 on HMZ with PID 16592 (started by hamza in D:\My Projects\Programme 4.1 (JAVA)\HMZ\testElastics)
+2021-12-09 15:33:29.062  INFO 16592 --- [main] c.e.t.TestElasticsApplicationTests       : No active profile set, falling back to default profiles: default
+2021-12-09 15:33:29.801  INFO 16592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 15:33:29.867  INFO 16592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2021-12-09 15:33:30.628  INFO 16592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-09 15:33:30.704  INFO 16592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-09 15:33:30.932  INFO 16592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 15:33:31.322  INFO 16592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-09 15:33:31.570  INFO 16592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-09 15:33:31.610  INFO 16592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-12-09 15:33:32.487  INFO 16592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 15:33:32.497  INFO 16592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-09 15:33:33.030  WARN 16592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 15:33:33.977  INFO 16592 --- [main] c.e.t.TestElasticsApplicationTests       : Started TestElasticsApplicationTests in 5.291 seconds (JVM running for 6.704)
+2021-12-09 15:33:34.312 ERROR 16592 --- [main] c.e.testelastics.config.InitDataConfig   : DEV_LOGS: Data Initialized Successfully
+2021-12-09 15:33:34.572  INFO 16592 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-09 15:33:34.576  INFO 16592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-09 15:33:34.685  INFO 16592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
