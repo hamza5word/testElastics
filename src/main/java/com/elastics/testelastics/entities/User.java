@@ -1,5 +1,6 @@
 package com.elastics.testelastics.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,6 +21,7 @@ public class User {
     private String name;
 
     @OneToMany(mappedBy = "user")
-    private Collection<Item> items;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private Collection<Reservation> reservations;
 
 }

@@ -17,9 +17,11 @@ public class InitDataConfig implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        service.initUsers();
-        service.initItems();
-        LOG.error("DEV_LOGS: Data Initialized Successfully");
+        //service.initUsers();
+        //service.initItems();
+        //service.initReservations();
+        service.initRequiredDirectories();
+        LOG.info("DEV_LOGS: Data Initialized Successfully");
     }
 
 }
