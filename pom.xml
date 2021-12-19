@@ -112,6 +112,7 @@
             <properties>
                 <dev.mode>true</dev.mode>
                 <item.img.path>${user.home}/HMZ-APPS/testElastics/images</item.img.path>
+                <origins>http://localhost:4200</origins>
             </properties>
             <build>
                 <resources>

@@ -12,4 +12,7 @@ public class AppPropertiesConfig {
     @Value("${item.img.path}")
     public String ITEM_IMG_PATH;
 
+    @Value("${origins}")
+    public String ORIGINS;
+
 }
